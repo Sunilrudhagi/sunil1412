@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        docker_image = 'sunilrudhagi/test-main:latest'
+        docker_image = 'https://github.com/Sunilrudhagi/sunil1412.git/test-main:latest'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/sunilrudhagi/scorll-web.git'
+                git url: 'https://github.com/https://github.com/Sunilrudhagi/sunil1412.git/scorll-web.git'
             }
         }
 
