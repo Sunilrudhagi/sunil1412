@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                 git url: 'https://github.com/sunilrudhagi/sunil1412.git'
+                 git credentialsId: 'github-creds', url: 'https://github.com/sunilrudhagi/sunil1412.git'
             }
         }
 
