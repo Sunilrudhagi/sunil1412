@@ -5,10 +5,12 @@ pipeline {
         docker_image ='https://github.com/sunilrudhagi/sunil1412.git/test-main:latest'
     }
 
-    stages {
-        stage('Clone Repository') {
+   stages {
+        stage('Clone Repo') {
             steps {
-                 git credentialsId:'github-creds', url:'https://github.com/sunilrudhagi/sunil1412.git'
+                git credentialsId: 'github-creds',
+                    branch: 'main',
+                    url: 'https://github.com/sunilrudhagi/sunil1412.git'
             }
         }
 
